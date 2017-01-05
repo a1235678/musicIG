@@ -2,7 +2,7 @@
 //  PlayListViewController.swift
 //  MusicIG
 //
-//  Created by Apple Hsiao on 2017/1/3.
+//  Created by zeroplus on 2017/1/3.
 //  Copyright © 2017年 zeroplus. All rights reserved.
 //
 
@@ -164,11 +164,10 @@ class PlayListViewController: UIViewController, UITableViewDataSource, UITableVi
     func refreshInfo(){
         currentSecond = 0.0
         
-        songName = musicPlayer.nowPlayingItem?.title
-        artist = musicPlayer.nowPlayingItem?.artist
-        picture = musicPlayer.nowPlayingItem?.artwork?.image(at: CGSize.init(width: 375, height: 375))
+        let songName = musicPlayer.nowPlayingItem?.title
+        let artist = musicPlayer.nowPlayingItem?.artist
         
-        //第一頁資訊
+        //畫面上的資訊
         self.song.text = songName
         self.singer.text = artist
         Album.image = musicPlayer.nowPlayingItem?.artwork?.image(at: CGSize.init(width: Album.frame.width, height: Album.frame.height))

@@ -86,7 +86,7 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="G2P-s5-EOP"/>
-                                    <barButtonItem title="Add" systemItem="add" id="1fV-7o-C09">
+                                    <barButtonItem systemItem="add" id="1fV-7o-C09">
                                         <connections>
                                             <action selector="addSongs:" destination="BYZ-38-t0r" id="0Oe-Gf-jl3"/>
                                         </connections>
@@ -154,70 +154,6 @@
             </objects>
             <point key="canvasLocation" x="831" y="124"/>
         </scene>
-        <!--故事分享-->
-        <scene sceneID="9Zb-dz-lnf">
-            <objects>
-                <viewController storyboardIdentifier="nowplaying" id="zTu-BH-2C1" customClass="NowPlayingViewController" customModule="MusicIG" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="9Ty-IA-DXh"/>
-                        <viewControllerLayoutGuide type="bottom" id="ufr-Jr-auM"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="yZY-Gj-Yw5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QNH-cS-zfe">
-                                <rect key="frame" x="0.0" y="243" width="375" height="375"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="歌名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPA-OB-gLQ">
-                                <rect key="frame" x="45" y="61" width="141" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="你的名字" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U4J-2y-dc8">
-                                <rect key="frame" x="45" y="189" width="219" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.94989305729999995" green="0.94999974970000001" blue="0.94983154540000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYe-tM-58u">
-                                <rect key="frame" x="282" y="189" width="47" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="submit"/>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="關於這首歌的心得與紀錄..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Kme-4I-fW1">
-                                <rect key="frame" x="46" y="90" width="218" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.94989305734634399" green="0.94999974966049194" blue="0.94983154535293579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="歌手" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSN-Op-nt8">
-                                <rect key="frame" x="194" y="65" width="70" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="故事分享" id="lnz-xi-0g6"/>
-                    <connections>
-                        <outlet property="album" destination="QNH-cS-zfe" id="8J7-5n-MDm"/>
-                        <outlet property="singerLabel" destination="aSN-Op-nt8" id="AK6-B0-IeD"/>
-                        <outlet property="songLabel" destination="cPA-OB-gLQ" id="hCm-Lr-aLo"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iQu-Iy-tfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1560.8" y="116.49175412293854"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="GVP-b2-cWH">
             <objects>
@@ -230,7 +166,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="jaq-8M-Wqn"/>
-                        <segue destination="zTu-BH-2C1" kind="relationship" relationship="viewControllers" id="bQO-pD-LZm"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2S5-T7-Yzf" userLabel="First Responder" sceneMemberID="firstResponder"/>
